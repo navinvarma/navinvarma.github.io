@@ -26,274 +26,422 @@
         content="Projects spanning mobile apps, data platforms, web applications, and data analysis — each solving a real-world problem.">
     <meta property="twitter:image" content="https://www.nvarma.com/profile.jpg">
 
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
+    <link rel="icon" href="favicon-512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.min.css">
 </head>
 
 <body>
-    <main id="main-content" class="container">
+    <div class="app">
 
-        <section class="page-hero">
-            <h2>Side Projects &amp; Experiments</h2>
-            <p class="tagline">Building tools that solve real problems</p>
-            <p class="lead">Each project started with a real-world frustration or curiosity. Here's what I built and why. See my <a href="https://nvarma.com/portfolio">full portfolio</a> for professional work.</p>
-        </section>
-
-        <div class="projects-grid">
-
-            <!-- Blogger Takeout to MDX -->
-            <article class="project-card">
-                <div class="project-card-header">
-                    <div class="project-icon">&#128196;</div>
-                    <div class="project-title-group">
-                        <h3><a href="https://github.com/navinvarma/bloggertakeout2mdx" target="_blank"
-                                rel="noopener">Blogger Takeout to MDX</a></h3>
-                        <div class="project-meta"><span class="project-category">Content Migration</span><span class="project-updated">2026</span></div>
-                    </div>
-                </div>
-                <div class="project-problem">
-                    <div class="project-problem-label">The Problem</div>
-                    <p>Blogger users who want to move to modern static site generators face content lock-in. Posts, images, and comments are trapped in a proprietary export format with no clean migration path.</p>
-                </div>
-                <p class="project-solution">Converts Google Takeout Blogger exports into MDX files with YAML front matter and organized local media assets. Also generates WXR files for importing comments into Disqus, preserving community discussions during platform transitions.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">MDX</span>
-                    <span class="tech-tag">Astro</span>
-                    <span class="tech-tag">WXR</span>
-                    <span class="tech-tag">Disqus</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/navinvarma/bloggertakeout2mdx" target="_blank" rel="noopener"
-                        class="project-link project-link-primary">View on GitHub</a>
-                    <a href="https://www.nvarma.com/blog" target="_blank" rel="noopener"
-                        class="project-link project-link-secondary">See the Result</a>
-                </div>
-            </article>
-
-            <!-- Office Days -->
-            <article class="project-card">
-                <div class="project-card-header">
-                    <div class="project-icon">&#128241;</div>
-                    <div class="project-title-group">
-                        <h3><a href="https://github.com/navinvarma/officedays" target="_blank" rel="noopener">Office
-                                Days</a></h3>
-                        <div class="project-meta"><span class="project-category">Mobile Development</span><span class="project-updated">2025</span></div>
-                    </div>
-                </div>
-                <div class="project-problem">
-                    <div class="project-problem-label">The Problem</div>
-                    <p>Hybrid workers need to track how often they go into the office to meet return-to-office policies, but there's no simple way to log badge days and see attendance percentages over time.</p>
-                </div>
-                <p class="project-solution">A mobile app with a calendar interface for one-tap office day logging. Provides monthly, quarterly, and yearly attendance statistics with configurable business quarters — all stored locally on-device for privacy.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">React Native</span>
-                    <span class="tech-tag">Expo</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">Jest</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/navinvarma/officedays" target="_blank" rel="noopener"
-                        class="project-link project-link-primary">View on GitHub</a>
-                </div>
-            </article>
-
-            <!-- CSV2Dataset -->
-            <article class="project-card">
-                <div class="project-card-header">
-                    <div class="project-icon">&#9881;&#65039;</div>
-                    <div class="project-title-group">
-                        <h3><a href="https://github.com/navinvarma/csv2dataset" target="_blank"
-                                rel="noopener">CSV2Dataset</a></h3>
-                        <div class="project-meta"><span class="project-category">Data Platform</span><span class="project-updated">2022</span></div>
-                    </div>
-                </div>
-                <div class="project-problem">
-                    <div class="project-problem-label">The Problem</div>
-                    <p>Open data enthusiasts download CSVs from sites like Data.gov and Kaggle, but managing dozens of files locally wastes disk space and makes discovery painful. There's no easy way to compress, catalog, and query them.</p>
-                </div>
-                <p class="project-solution">A local web app that converts CSV files to Apache Avro format, achieving 60-90%+ compression while preserving queryability. Upload, preview, tag, and manage datasets through a clean interface with REST and GraphQL APIs.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">Spring Boot</span>
-                    <span class="tech-tag">Apache Avro</span>
-                    <span class="tech-tag">Apache Spark</span>
-                    <span class="tech-tag">Thymeleaf</span>
-                    <span class="tech-tag">GraphQL</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/navinvarma/csv2dataset" target="_blank" rel="noopener"
-                        class="project-link project-link-primary">View on GitHub</a>
-                </div>
-            </article>
-
-            <!-- Mortgage Analysis -->
-            <article class="project-card">
-                <div class="project-card-header">
-                    <div class="project-icon">&#127974;</div>
-                    <div class="project-title-group">
-                        <h3><a href="https://github.com/navinvarma/MortgageAnalysis" target="_blank"
-                                rel="noopener">Mortgage Delinquency Analysis</a></h3>
-                        <div class="project-meta"><span class="project-category">Financial Analytics</span><span class="project-updated">2021</span></div>
-                    </div>
-                </div>
-                <div class="project-problem">
-                    <div class="project-problem-label">The Problem</div>
-                    <p>Understanding mortgage market health across U.S. regions requires sifting through CFPB's National Mortgage Database — raw data that's hard to interpret without visualization and time-series context.</p>
-                </div>
-                <p class="project-solution">Analyzes residential mortgage delinquency trends (2008–2021) across states, metros, and counties. Tracks early-stage (30–89 day) and serious (90+ day) delinquencies through Jupyter notebooks and an interactive Streamlit web app.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">Streamlit</span>
-                    <span class="tech-tag">Jupyter</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/navinvarma/MortgageAnalysis" target="_blank" rel="noopener"
-                        class="project-link project-link-primary">View on GitHub</a>
-                </div>
-            </article>
-
-            <!-- Simple Health Tracker -->
-            <article class="project-card">
-                <div class="project-card-header">
-                    <div class="project-icon">&#10084;&#65039;</div>
-                    <div class="project-title-group">
-                        <h3><a href="https://github.com/navinvarma/SimpleHealthTracker" target="_blank"
-                                rel="noopener">Simple Health Tracker</a></h3>
-                        <div class="project-meta"><span class="project-category">Health Tech</span><span class="project-updated">2020</span></div>
-                    </div>
-                </div>
-                <div class="project-problem">
-                    <div class="project-problem-label">The Problem</div>
-                    <p>Daily health logging (blood pressure, glucose, weight, meals) shouldn't require trusting a third-party service with sensitive data. Most health apps store your information on their servers.</p>
-                </div>
-                <p class="project-solution">A privacy-first health logger that sends entries directly to your email via SMTP — no database, no server-side storage. Your health data lives in your inbox, under your control, ready for extraction whenever you need it.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">Express</span>
-                    <span class="tech-tag">Nodemailer</span>
-                    <span class="tech-tag">Bootstrap</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/navinvarma/SimpleHealthTracker" target="_blank" rel="noopener"
-                        class="project-link project-link-primary">View on GitHub</a>
-                    <a href="https://simplehealthtracker.nvarma.com/" target="_blank" rel="noopener"
-                        class="project-link project-link-secondary">Live Demo</a>
-                </div>
-            </article>
-
-            <!-- HouseHunt -->
-            <article class="project-card">
-                <div class="project-card-header">
-                    <div class="project-icon">&#127968;</div>
-                    <div class="project-title-group">
-                        <h3><a href="https://github.com/navinvarma/househunt" target="_blank"
-                                rel="noopener">HouseHunt</a></h3>
-                        <div class="project-meta"><span class="project-category">Data Analysis</span><span class="project-updated">2018</span></div>
-                    </div>
-                </div>
-                <div class="project-problem">
-                    <div class="project-problem-label">The Problem</div>
-                    <p>Homebuyers need comparable sales data to make informed offers, but professional real estate APIs are expensive. Manual comparison of Redfin listings is tedious and error-prone.</p>
-                </div>
-                <p class="project-solution">Built during a real East Bay home search in 2018. Click any property in the data table to see comparable recently-sold homes and average pricing — turning raw Redfin CSV exports into actionable buying intelligence.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">R</span>
-                    <span class="tech-tag">Shiny</span>
-                    <span class="tech-tag">DT</span>
-                    <span class="tech-tag">data.table</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/navinvarma/househunt" target="_blank" rel="noopener"
-                        class="project-link project-link-primary">View on GitHub</a>
-                    <a href="https://navinvarma.shinyapps.io/househunt/" target="_blank" rel="noopener"
-                        class="project-link project-link-secondary">Live Demo</a>
-                </div>
-            </article>
-
-            <!-- EduExplore -->
-            <article class="project-card">
-                <div class="project-card-header">
-                    <div class="project-icon">&#127891;</div>
-                    <div class="project-title-group">
-                        <h3><a href="https://github.com/navinvarma/eduExplore" target="_blank"
-                                rel="noopener">EduExplore</a></h3>
-                        <div class="project-meta"><span class="project-category">Web Application</span><span class="project-updated">2017</span></div>
-                    </div>
-                </div>
-                <div class="project-problem">
-                    <div class="project-problem-label">The Problem</div>
-                    <p>Prospective students researching graduate programs (like Data Science) struggle to compare programs across universities. Official databases are dry and community knowledge is scattered across forums.</p>
-                </div>
-                <p class="project-solution">A crowd-sourced platform built on the Database of Accredited Postsecondary Institutions. Users can search, compare, and contribute program information, making college research collaborative instead of solitary.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">Express</span>
-                    <span class="tech-tag">AngularJS</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">Bootstrap</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/navinvarma/eduExplore" target="_blank" rel="noopener"
-                        class="project-link project-link-primary">View on GitHub</a>
-                    <a href="https://edu-explore.nvarma.com" target="_blank" rel="noopener"
-                        class="project-link project-link-secondary">Live Demo</a>
-                </div>
-            </article>
-
-            <!-- Angry Consumer -->
-            <article class="project-card">
-                <div class="project-card-header">
-                    <div class="project-icon">&#128226;</div>
-                    <div class="project-title-group">
-                        <h3><a href="https://github.com/navinvarma/AngryConsumer" target="_blank" rel="noopener">Angry
-                                Consumer</a></h3>
-                        <div class="project-meta"><span class="project-category">Data Visualization</span><span class="project-updated">2016</span></div>
-                    </div>
-                </div>
-                <div class="project-problem">
-                    <div class="project-problem-label">The Problem</div>
-                    <p>The CFPB publishes millions of consumer finance complaints, but the raw dataset is overwhelming. There's no easy way to filter, explore patterns, and visualize complaint trends against financial institutions.</p>
-                </div>
-                <p class="project-solution">An interactive web app with server-side filtering and Google Charts visualizations that make CFPB complaint data explorable. Browse by company, product type, and date range to surface patterns in consumer finance complaints.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">Express</span>
-                    <span class="tech-tag">AngularJS</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">Google Charts</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/navinvarma/AngryConsumer" target="_blank" rel="noopener"
-                        class="project-link project-link-primary">View on GitHub</a>
-                    <a href="https://angry-consumer.nvarma.com" target="_blank" rel="noopener"
-                        class="project-link project-link-secondary">Live Demo</a>
-                </div>
-            </article>
-
-        </div>
-
-        <section class="github-cta">
-            <h2>Explore All Projects</h2>
-            <p>View the full source code, contributions, and commit history on GitHub</p>
-            <a href="https://github.com/navinvarma" class="btn" target="_blank" rel="noopener">Visit GitHub
-                Profile</a>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Navin Varma</p>
-                <p class="footer-right"><a href="https://www.nvarma.com">nvarma.com</a></p>
+        <header class="topbar">
+            <div class="topbar-left">
+                <h1 class="site-title">Side Projects <span class="amp">&amp;</span> Experiments</h1>
+                <p class="site-sub">Building tools that solve real problems — and some just for fun · <a href="https://nvarma.com/portfolio">see full portfolio</a></p>
             </div>
+            <nav class="topbar-nav">
+                <a href="https://www.nvarma.com" class="topbar-link">nvarma.com</a>
+                <a href="https://github.com/navinvarma" class="topbar-link topbar-link--gh">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                </a>
+            </nav>
+        </header>
+
+        <div class="workspace">
+
+            <nav class="project-index" role="tablist" aria-label="Projects">
+                <div class="index-head">
+                    <span class="index-label">Projects</span>
+                    <span class="index-count">8</span>
+                </div>
+
+                <button class="idx-item is-active" role="tab" aria-selected="true" aria-controls="detail-0" data-idx="0">
+                    <span class="idx-icon" aria-hidden="true">&#128196;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">Blogger Takeout to MDX</span>
+                        <span class="idx-meta">Content Migration &middot; 2026</span>
+                    </span>
+                </button>
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-1" data-idx="1">
+                    <span class="idx-icon" aria-hidden="true">&#128241;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">Office Days</span>
+                        <span class="idx-meta">Mobile Development &middot; 2025</span>
+                    </span>
+                </button>
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-2" data-idx="2">
+                    <span class="idx-icon" aria-hidden="true">&#9881;&#65039;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">CSV2Dataset</span>
+                        <span class="idx-meta">Data Platform &middot; 2022</span>
+                    </span>
+                </button>
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-3" data-idx="3">
+                    <span class="idx-icon" aria-hidden="true">&#127974;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">Mortgage Delinquency Analysis</span>
+                        <span class="idx-meta">Financial Analytics &middot; 2021</span>
+                    </span>
+                </button>
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-4" data-idx="4">
+                    <span class="idx-icon" aria-hidden="true">&#10084;&#65039;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">Simple Health Tracker</span>
+                        <span class="idx-meta">Health Tech &middot; 2020</span>
+                    </span>
+                </button>
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-5" data-idx="5">
+                    <span class="idx-icon" aria-hidden="true">&#127968;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">HouseHunt</span>
+                        <span class="idx-meta">Data Analysis &middot; 2018</span>
+                    </span>
+                </button>
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-6" data-idx="6">
+                    <span class="idx-icon" aria-hidden="true">&#127891;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">EduExplore</span>
+                        <span class="idx-meta">Web Application &middot; 2017</span>
+                    </span>
+                </button>
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-7" data-idx="7">
+                    <span class="idx-icon" aria-hidden="true">&#128226;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">Angry Consumer</span>
+                        <span class="idx-meta">Data Visualization &middot; 2016</span>
+                    </span>
+                </button>
+            </nav>
+
+            <main class="detail-area">
+                <div class="detail-viewport">
+
+                    <section class="project-detail is-active" id="detail-0" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#128196;</div>
+                            <div>
+                                <h2 class="pd-title">Blogger Takeout to MDX</h2>
+                                <div class="pd-meta"><span class="pd-cat">Content Migration</span><span class="pd-year">2026</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>Blogger users who want to move to modern static site generators face content lock-in. Posts, images, and comments are trapped in a proprietary export format with no clean migration path.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>Converts Google Takeout Blogger exports into MDX files with YAML front matter and organized local media assets. Also generates WXR files for importing comments into Disqus, preserving community discussions during platform transitions.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview">
+                                <img src="https://www.nvarma.com/_astro/site-after-5.Cfqb2xpm_pVXSV.webp" alt="Blog site built with migrated content" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">Python</span><span class="tag">MDX</span><span class="tag">Astro</span><span class="tag">WXR</span><span class="tag">Disqus</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/bloggertakeout2mdx" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                            <a href="https://www.nvarma.com/blog" target="_blank" rel="noopener" class="pd-btn pd-btn--sec">See the Result</a>
+                        </div>
+                    </section>
+
+                    <section class="project-detail" id="detail-1" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#128241;</div>
+                            <div>
+                                <h2 class="pd-title">Office Days</h2>
+                                <div class="pd-meta"><span class="pd-cat">Mobile Development</span><span class="pd-year">2025</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>Hybrid workers need to track how often they go into the office to meet return-to-office policies, but there's no simple way to log badge days and see attendance percentages over time.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>A mobile app with a calendar interface for one-tap office day logging. Provides monthly, quarterly, and yearly attendance statistics with configurable business quarters — all stored locally on-device for privacy.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview pd-preview--mobile">
+                                <img src="https://raw.githubusercontent.com/navinvarma/officedays/main/screenshots/Screenshot_20250904_150805_Office%20Day%20Tracker.jpg" alt="Office Days app screenshot" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span><span class="tag">Jest</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/officedays" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                        </div>
+                    </section>
+
+                    <section class="project-detail" id="detail-2" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#9881;&#65039;</div>
+                            <div>
+                                <h2 class="pd-title">CSV2Dataset</h2>
+                                <div class="pd-meta"><span class="pd-cat">Data Platform</span><span class="pd-year">2022</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>Open data enthusiasts download CSVs from sites like Data.gov and Kaggle, but managing dozens of files locally wastes disk space and makes discovery painful. There's no easy way to compress, catalog, and query them.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>A local web app that converts CSV files to Apache Avro format, achieving 60-90%+ compression while preserving queryability. Upload, preview, tag, and manage datasets through a clean interface with REST and GraphQL APIs.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview">
+                                <img src="https://raw.githubusercontent.com/navinvarma/csv2dataset/main/src/main/resources/static/img/Preview_Dataset.png" alt="CSV2Dataset import interface" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Apache Avro</span><span class="tag">Apache Spark</span><span class="tag">Thymeleaf</span><span class="tag">GraphQL</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/csv2dataset" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                        </div>
+                    </section>
+
+                    <section class="project-detail" id="detail-3" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#127974;</div>
+                            <div>
+                                <h2 class="pd-title">Mortgage Delinquency Analysis</h2>
+                                <div class="pd-meta"><span class="pd-cat">Financial Analytics</span><span class="pd-year">2021</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>Understanding mortgage market health across U.S. regions requires sifting through CFPB's National Mortgage Database — raw data that's hard to interpret without visualization and time-series context.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>Analyzes residential mortgage delinquency trends (2008–2021) across states, metros, and counties. Tracks early-stage (30–89 day) and serious (90+ day) delinquencies through Jupyter notebooks and an interactive Streamlit web app.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview">
+                                <img src="https://raw.githubusercontent.com/navinvarma/MortgageAnalysis/refs/heads/main/demo_streamlit_mortgage.png" alt="Average delinquency trends visualization" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Streamlit</span><span class="tag">Jupyter</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/MortgageAnalysis" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                        </div>
+                    </section>
+
+                    <section class="project-detail" id="detail-4" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#10084;&#65039;</div>
+                            <div>
+                                <h2 class="pd-title">Simple Health Tracker</h2>
+                                <div class="pd-meta"><span class="pd-cat">Health Tech</span><span class="pd-year">2020</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>Daily health logging (blood pressure, glucose, weight, meals) shouldn't require trusting a third-party service with sensitive data. Most health apps store your information on their servers.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>A privacy-first health logger that sends entries directly to your email via SMTP — no database, no server-side storage. Your health data lives in your inbox, under your control, ready for extraction whenever you need it.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview">
+                                <img src="https://raw.githubusercontent.com/navinvarma/SimpleHealthTracker/main/SimpleHealthTracker_Preview.png" alt="Simple Health Tracker interface" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Nodemailer</span><span class="tag">Bootstrap</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/SimpleHealthTracker" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                            <a href="https://simplehealthtracker.nvarma.com/" target="_blank" rel="noopener" class="pd-btn pd-btn--sec">Live Demo</a>
+                        </div>
+                    </section>
+
+                    <section class="project-detail" id="detail-5" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#127968;</div>
+                            <div>
+                                <h2 class="pd-title">HouseHunt</h2>
+                                <div class="pd-meta"><span class="pd-cat">Data Analysis</span><span class="pd-year">2018</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>Homebuyers need comparable sales data to make informed offers, but professional real estate APIs are expensive. Manual comparison of Redfin listings is tedious and error-prone.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>Built during a real East Bay home search in 2018. Click any property in the data table to see comparable recently-sold homes and average pricing — turning raw Redfin CSV exports into actionable buying intelligence.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview">
+                                <img src="https://raw.githubusercontent.com/navinvarma/househunt/main/HouseHunt_Preview.png" alt="HouseHunt data table interface" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">R</span><span class="tag">Shiny</span><span class="tag">DT</span><span class="tag">data.table</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/househunt" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                            <a href="https://navinvarma.shinyapps.io/househunt/" target="_blank" rel="noopener" class="pd-btn pd-btn--sec">Live Demo</a>
+                        </div>
+                    </section>
+
+                    <section class="project-detail" id="detail-6" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#127891;</div>
+                            <div>
+                                <h2 class="pd-title">EduExplore</h2>
+                                <div class="pd-meta"><span class="pd-cat">Web Application</span><span class="pd-year">2017</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>Prospective students researching graduate programs (like Data Science) struggle to compare programs across universities. Official databases are dry and community knowledge is scattered across forums.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>A crowd-sourced platform built on the Database of Accredited Postsecondary Institutions. Users can search, compare, and contribute program information, making college research collaborative instead of solitary.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview">
+                                <img src="https://raw.githubusercontent.com/navinvarma/eduExplore/main/img/homepage.png" alt="EduExplore homepage" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">MongoDB</span><span class="tag">Express</span><span class="tag">AngularJS</span><span class="tag">Node.js</span><span class="tag">Bootstrap</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/eduExplore" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                            <a href="https://edu-explore.nvarma.com" target="_blank" rel="noopener" class="pd-btn pd-btn--sec">Live Demo</a>
+                        </div>
+                    </section>
+
+                    <section class="project-detail" id="detail-7" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#128226;</div>
+                            <div>
+                                <h2 class="pd-title">Angry Consumer</h2>
+                                <div class="pd-meta"><span class="pd-cat">Data Visualization</span><span class="pd-year">2016</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>The CFPB publishes millions of consumer finance complaints, but the raw dataset is overwhelming. There's no easy way to filter, explore patterns, and visualize complaint trends against financial institutions.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>An interactive web app with server-side filtering and Google Charts visualizations that make CFPB complaint data explorable. Browse by company, product type, and date range to surface patterns in consumer finance complaints.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview">
+                                <img src="https://raw.githubusercontent.com/navinvarma/AngryConsumer/main/assets/AngryConsumer_Preview.png" alt="Angry Consumer data table" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">MongoDB</span><span class="tag">Express</span><span class="tag">AngularJS</span><span class="tag">Node.js</span><span class="tag">Google Charts</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/AngryConsumer" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                            <a href="https://angry-consumer.nvarma.com" target="_blank" rel="noopener" class="pd-btn pd-btn--sec">Live Demo</a>
+                        </div>
+                    </section>
+
+                </div>
+
+                <aside class="blog-strip">
+                    <div class="blog-strip-head">
+                        <h3>Recent Blog Posts</h3>
+                        <a href="https://www.nvarma.com/blog" target="_blank" rel="noopener">View all posts &rarr;</a>
+                    </div>
+                    <div id="blog-feed" class="blog-grid">
+                        <p class="blog-loading">Loading posts&hellip;</p>
+                    </div>
+                </aside>
+            </main>
+
         </div>
-    </footer>
+
+        <footer class="bottombar">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Navin Varma</p>
+            <p><a href="https://www.nvarma.com">nvarma.com</a></p>
+        </footer>
+
+    </div>
+
+    <script>
+    (function() {
+        /* Project selection */
+        var items = document.querySelectorAll('.idx-item');
+        var panels = document.querySelectorAll('.project-detail');
+
+        function select(idx) {
+            items.forEach(function(el) {
+                el.classList.remove('is-active');
+                el.setAttribute('aria-selected', 'false');
+            });
+            panels.forEach(function(el) { el.classList.remove('is-active'); });
+            items[idx].classList.add('is-active');
+            items[idx].setAttribute('aria-selected', 'true');
+            var panel = document.getElementById('detail-' + idx);
+            panel.classList.add('is-active');
+        }
+
+        items.forEach(function(item, i) {
+            item.addEventListener('click', function() { select(i); });
+        });
+
+        /* Keyboard nav */
+        document.querySelector('.project-index').addEventListener('keydown', function(e) {
+            var current = Array.prototype.indexOf.call(items, document.querySelector('.idx-item.is-active'));
+            if (e.key === 'ArrowDown' && current < items.length - 1) {
+                select(current + 1); items[current + 1].focus(); e.preventDefault();
+            } else if (e.key === 'ArrowUp' && current > 0) {
+                select(current - 1); items[current - 1].focus(); e.preventDefault();
+            }
+        });
+
+        /* RSS feed */
+        var feed = document.getElementById('blog-feed');
+        fetch('https://www.nvarma.com/rss.xml')
+            .then(function(res) { return res.text(); })
+            .then(function(xml) {
+                var doc = new DOMParser().parseFromString(xml, 'text/xml');
+                var rssItems = doc.querySelectorAll('item');
+                var html = '';
+                var count = Math.min(rssItems.length, 10);
+                for (var i = 0; i < count; i++) {
+                    var title = rssItems[i].querySelector('title').textContent;
+                    var link = rssItems[i].querySelector('link').textContent;
+                    var pubDate = rssItems[i].querySelector('pubDate').textContent;
+                    var date = new Date(pubDate);
+                    var fmt = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                    html += '<a href="' + link + '" target="_blank" rel="noopener" class="blog-item">'
+                        + '<span class="blog-item-title">' + title + '</span>'
+                        + '<span class="blog-item-date">' + fmt + '</span>'
+                        + '</a>';
+                }
+                feed.innerHTML = html || '<p class="blog-loading">No posts found.</p>';
+            })
+            .catch(function() {
+                feed.innerHTML = '<p class="blog-loading">Could not load posts.</p>';
+            });
+    })();
+    </script>
 </body>
 
 </html>
