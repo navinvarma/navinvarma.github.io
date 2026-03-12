@@ -60,59 +60,66 @@
             <nav class="project-index" role="tablist" aria-label="Projects">
                 <div class="index-head">
                     <span class="index-label">Projects</span>
-                    <span class="index-count">8</span>
+                    <span class="index-count">9</span>
                 </div>
 
                 <button class="idx-item is-active" role="tab" aria-selected="true" aria-controls="detail-0" data-idx="0">
+                    <span class="idx-icon" aria-hidden="true">&#127908;</span>
+                    <span class="idx-text">
+                        <span class="idx-name">Murmur</span>
+                        <span class="idx-meta">Voice Notes &middot; 2026</span>
+                    </span>
+                </button>
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-1" data-idx="1">
                     <span class="idx-icon" aria-hidden="true">&#128196;</span>
                     <span class="idx-text">
                         <span class="idx-name">Blogger Takeout to MDX</span>
                         <span class="idx-meta">Content Migration &middot; 2026</span>
                     </span>
                 </button>
-                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-1" data-idx="1">
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-2" data-idx="2">
                     <span class="idx-icon" aria-hidden="true">&#128241;</span>
                     <span class="idx-text">
                         <span class="idx-name">Office Days</span>
                         <span class="idx-meta">Mobile Development &middot; 2025</span>
                     </span>
                 </button>
-                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-2" data-idx="2">
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-3" data-idx="3">
                     <span class="idx-icon" aria-hidden="true">&#9881;&#65039;</span>
                     <span class="idx-text">
                         <span class="idx-name">CSV2Dataset</span>
                         <span class="idx-meta">Data Platform &middot; 2022</span>
                     </span>
                 </button>
-                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-3" data-idx="3">
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-4" data-idx="4">
                     <span class="idx-icon" aria-hidden="true">&#127974;</span>
                     <span class="idx-text">
                         <span class="idx-name">Mortgage Delinquency Analysis</span>
                         <span class="idx-meta">Financial Analytics &middot; 2021</span>
                     </span>
                 </button>
-                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-4" data-idx="4">
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-5" data-idx="5">
                     <span class="idx-icon" aria-hidden="true">&#10084;&#65039;</span>
                     <span class="idx-text">
                         <span class="idx-name">Simple Health Tracker</span>
                         <span class="idx-meta">Health Tech &middot; 2020</span>
                     </span>
                 </button>
-                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-5" data-idx="5">
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-6" data-idx="6">
                     <span class="idx-icon" aria-hidden="true">&#127968;</span>
                     <span class="idx-text">
                         <span class="idx-name">HouseHunt</span>
                         <span class="idx-meta">Data Analysis &middot; 2018</span>
                     </span>
                 </button>
-                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-6" data-idx="6">
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-7" data-idx="7">
                     <span class="idx-icon" aria-hidden="true">&#127891;</span>
                     <span class="idx-text">
                         <span class="idx-name">EduExplore</span>
                         <span class="idx-meta">Web Application &middot; 2017</span>
                     </span>
                 </button>
-                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-7" data-idx="7">
+                <button class="idx-item" role="tab" aria-selected="false" aria-controls="detail-8" data-idx="8">
                     <span class="idx-icon" aria-hidden="true">&#128226;</span>
                     <span class="idx-text">
                         <span class="idx-name">Angry Consumer</span>
@@ -125,6 +132,36 @@
                 <div class="detail-viewport">
 
                     <section class="project-detail is-active" id="detail-0" role="tabpanel">
+                        <div class="pd-head">
+                            <div class="pd-icon">&#127908;</div>
+                            <div>
+                                <h2 class="pd-title">Murmur</h2>
+                                <div class="pd-meta"><span class="pd-cat">Voice Notes</span><span class="pd-year">2026</span></div>
+                            </div>
+                        </div>
+                        <div class="pd-body">
+                            <div class="pd-text">
+                                <div class="pd-section">
+                                    <h3>The Problem</h3>
+                                    <p>Capturing quick voice notes and transcripts often means signing up for a service or sending audio to a server, which is overkill for lightweight personal use.</p>
+                                </div>
+                                <div class="pd-section">
+                                    <h3>The Solution</h3>
+                                    <p>A minimal, single-page recorder that runs entirely in the browser. Record, play back, and transcribe voice notes with no backend, keeping everything local to your device.</p>
+                                </div>
+                            </div>
+                            <div class="pd-preview">
+                                <img src="https://raw.githubusercontent.com/navinvarma/murmur/refs/heads/main/screenshot.png" alt="Murmur voice notes interface preview" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="pd-tags"><span class="tag">JavaScript</span><span class="tag">Web Audio</span><span class="tag">Web Speech API</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+                        <div class="pd-actions">
+                            <a href="https://github.com/navinvarma/murmur" target="_blank" rel="noopener" class="pd-btn pd-btn--pri">View on GitHub</a>
+                            <a href="https://navinvarma.github.io/murmur" target="_blank" rel="noopener" class="pd-btn pd-btn--sec">Live Demo</a>
+                        </div>
+                    </section>
+
+                    <section class="project-detail" id="detail-1" role="tabpanel">
                         <div class="pd-head">
                             <div class="pd-icon">&#128196;</div>
                             <div>
@@ -154,7 +191,7 @@
                         </div>
                     </section>
 
-                    <section class="project-detail" id="detail-1" role="tabpanel">
+                    <section class="project-detail" id="detail-2" role="tabpanel">
                         <div class="pd-head">
                             <div class="pd-icon">&#128241;</div>
                             <div>
@@ -183,7 +220,7 @@
                         </div>
                     </section>
 
-                    <section class="project-detail" id="detail-2" role="tabpanel">
+                    <section class="project-detail" id="detail-3" role="tabpanel">
                         <div class="pd-head">
                             <div class="pd-icon">&#9881;&#65039;</div>
                             <div>
@@ -212,7 +249,7 @@
                         </div>
                     </section>
 
-                    <section class="project-detail" id="detail-3" role="tabpanel">
+                    <section class="project-detail" id="detail-4" role="tabpanel">
                         <div class="pd-head">
                             <div class="pd-icon">&#127974;</div>
                             <div>
@@ -241,7 +278,7 @@
                         </div>
                     </section>
 
-                    <section class="project-detail" id="detail-4" role="tabpanel">
+                    <section class="project-detail" id="detail-5" role="tabpanel">
                         <div class="pd-head">
                             <div class="pd-icon">&#10084;&#65039;</div>
                             <div>
@@ -271,7 +308,7 @@
                         </div>
                     </section>
 
-                    <section class="project-detail" id="detail-5" role="tabpanel">
+                    <section class="project-detail" id="detail-6" role="tabpanel">
                         <div class="pd-head">
                             <div class="pd-icon">&#127968;</div>
                             <div>
@@ -301,7 +338,7 @@
                         </div>
                     </section>
 
-                    <section class="project-detail" id="detail-6" role="tabpanel">
+                    <section class="project-detail" id="detail-7" role="tabpanel">
                         <div class="pd-head">
                             <div class="pd-icon">&#127891;</div>
                             <div>
@@ -331,7 +368,7 @@
                         </div>
                     </section>
 
-                    <section class="project-detail" id="detail-7" role="tabpanel">
+                    <section class="project-detail" id="detail-8" role="tabpanel">
                         <div class="pd-head">
                             <div class="pd-icon">&#128226;</div>
                             <div>
