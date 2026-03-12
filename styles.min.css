@@ -549,8 +549,8 @@ a:hover{color:var(--primary-dark)}
 /* ---- Responsive ---- */
 
 @media(max-width:900px){
-  .app{height:auto;min-height:100vh;min-height:100dvh}
-  .workspace{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+  .app{height:auto;min-height:100vh;min-height:100dvh;overflow:visible}
+  .workspace{grid-template-columns:1fr;grid-template-rows:auto auto;overflow:visible}
   .project-index{
     flex-direction:row;
     overflow-x:auto;
@@ -588,7 +588,13 @@ a:hover{color:var(--primary-dark)}
     line-height:1.2;
   }
   .idx-meta{font-size:0.5625rem}
-  .pd-body{grid-template-columns:1fr}
+  .detail-area{overflow:visible}
+  .detail-viewport{overflow:visible;min-height:0;flex:none}
+  .project-detail{min-height:auto;overflow:visible}
+  .project-detail.is-active{flex:none}
+  .pd-body{grid-template-columns:1fr;overflow:visible}
+  .pd-text{overflow:visible}
+  .pd-preview{overflow:visible}
   .pd-preview img{max-height:200px}
   .blog-grid{columns:1}
 }
